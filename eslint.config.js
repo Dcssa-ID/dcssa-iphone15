@@ -23,6 +23,10 @@ export default [
       'react-hooks': reactHooks,
       'react-refresh': reactRefresh,
       '@react-three': react,
+      '@react-three/drei': react,
+      '@react-three/fiber': react,
+      '@react-three/flex': react,
+      '@react-three/xr': react,
     },
     rules: {
       ...js.configs.recommended.rules,
