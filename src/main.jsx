@@ -1,6 +1,7 @@
 import React, { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
+import { Analytics } from '@vercel/analytics/react'
 import ProfilerApp from './App.jsx'
 import * as Sentry from "@sentry/react";
 
@@ -25,6 +26,7 @@ Sentry.init({
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <Analytics />
     <ProfilerApp />
   </StrictMode>
 )
